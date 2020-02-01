@@ -77,6 +77,10 @@ header h1 {
   text-align: center !important;
 }
 
+.no-desktop {
+  display: none;
+}
+
 .align-right {
   text-align: right;
 }
@@ -135,6 +139,7 @@ header h1 {
   transition-timing-function: ease-out;
   pointer-events: none;
 }
+
 .intro a:hover:after,
 .intro a:focus:after,
 .intro a:active:after {
@@ -167,6 +172,7 @@ header h1 {
   text-align: left;
   margin: auto;
   width: 100%;
+  padding: 2rem;
 }
 
 .contact {
@@ -185,99 +191,374 @@ header h1 {
   color: #fafafa;
 }
 
-@media (min-width:1281px) {
+header h1 {
+  font-size: 16rem;
+  line-height: 16rem;
+}
+nav {
+  padding: 2rem 0;
+  margin: 1rem 0;
+}
+nav p {
+  font-size: 2rem;
+}
+.profile-pic {
+  margin-top: -8rem;
+}
+.profile-pic img {
+  width: 50vw;
+}
+.intro {
+  margin-top: 14rem;
+  max-width: 80vw;
+}
+.intro p {
+  font-size: 4rem;
+  line-height: 8rem;
+  margin: 0;
+}
+.intro a:after {
+  bottom: -1rem;
+  height: 1rem;
+}
+.projects {
+  margin: 40vh 0;
+}
+.projects h1 {
+  font-size: 12rem;
+  font-weight: 600;
+  margin-bottom: 30vh;
+}
+.projects h2 {
+  font-size: 6rem;
+  font-weight: 400;
+}
+.project-obj {
+  margin-bottom: 20rem;
+}
+.project-obj h1 {
+  font-size: 8rem;
+  line-height: 7rem;
+  margin-bottom: 2rem;
+}
+.project-obj p {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  padding-right: 8rem;
+}
+.project-content {
+  padding: 4rem;
+}
+.contact {
+  padding: 10rem;
+}
+.contact h1 {
+  font-size: 12rem;
+  font-weight: 600;
+  text-align: left;
+}
+.contact-info {
+  width: 50%;
+  float: left;
+}
+.contact p {
+  opacity: 0.6;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 6rem 0;
+}
+.contact .email {
+  font-size: 3rem;
+  color: #fff;
+  opacity: 1;
+}
+
+@media (min-width:320px) and (max-width:480px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
+  html {
+    font-size: 12px;
+  }
+  header {
+    padding-top: 2rem;
+  }
   header h1 {
-    font-size: 16rem;
-    line-height: 16rem;
-  }
-  nav {
-    padding: 2rem 0;
-    margin: 1rem 0;
-  }
-  nav p {
-    font-size: 2rem;
+    font-size: 4rem;
+    line-height: 4rem;
   }
   .profile-pic {
-    margin-top: -8rem;
+    margin-top: -2rem;
   }
   .profile-pic img {
-    width: 50vw;
+    width: 85vw;
   }
   .intro {
-    margin-top: 14rem;
-    max-width: 80vw;
+    margin-top: 6rem;
   }
   .intro p {
-    font-size: 4rem;
-    line-height: 8rem;
-    margin: 0;
-  }
-  .intro a:after {
-    bottom: -1rem;
-    height: 1rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-bottom: 2rem;
   }
   .projects {
-    margin: 40vh 0;
+    margin: 30vh 0;
   }
   .projects h1 {
-    font-size: 12rem;
-    font-weight: 600;
-    margin-bottom: 30vh;
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    margin-bottom: 8vh;
   }
   .projects h2 {
-    font-size: 6rem;
-    font-weight: 400;
+    font-size: 3rem;
+    margin-top: 20vh;
   }
   .project-obj {
-    margin-bottom: 20rem;
+    margin-bottom: 8rem;
   }
   .project-obj h1 {
-    font-size: 8rem;
-    line-height: 7rem;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
     margin-bottom: 2rem;
   }
   .project-obj p {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    padding-right: 8rem;
+    padding-right: 2rem;
   }
   .project-content {
-    padding: 4rem;
+    padding: 0 2rem;
+  }
+  .full-pic img {
+    padding: 0 2rem;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .column-3 {
+    width: 100%;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .no-desktop {
+    display: block;
   }
   .contact {
-    padding: 10rem;
+    padding: 12rem 2rem;
+  }
+  .contact-info {
+    width: 80%;
   }
   .contact h1 {
-    font-size: 12rem;
-    font-weight: 600;
-    text-align: left;
+    font-size: 4rem;
   }
   .contact p {
-    padding-right: 10rem;
-    opacity: 0.6;
-    font-size: 1.5rem;
-    line-height: 3rem;
-    margin: 6rem 0;
+    margin: 4rem 0;
   }
   .contact .email {
-    font-size: 3rem;
-    color: #fff;
-    opacity: 1;
+    font-size: 1.8rem;
   }
 }
 
-@media (min-width:961px) {
-  /* tablet, landscape iPad, lo-res laptops ands desktops */
-}
-
-@media (min-width:641px) {
-  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-}
-
-@media (min-width:481px) {
+@media (min-width:481px) and (max-width:640px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  html {
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .intro p {
+    font-size: 3rem;
+  }
+  .profile-pic {
+    margin-top: -2rem;
+  }
+  .profile-pic img {
+    width: 80vw;
+  }
+  .projects {
+    margin-top: 30vh 0;
+  }
+  .projects h1 {
+    font-size: 9rem;
+    margin-bottom: 20vh;
+  }
+  .project-obj h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
+  .project-content {
+    padding: 2rem;
+  }
+  .full-pic img {
+    padding: 0 2rem;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .column-3 {
+    width: 100%;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .contact {
+    padding: 12rem 3rem;
+  }
+  .contact-info {
+    width: 65%;
+  }
+  .contact h1 {
+    font-size: 7rem;
+  }
+  .contact p {
+    margin: 8rem 0;
+  }
+  .contact .email {
+    font-size: 2.5rem;
+  }
 }
 
-@media (min-width:320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */ 
+@media (min-width:641px) and (max-width:800px) {
+  /* Smaller tablets @ 600 or @ 640 wide. */
+  html {
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+  .profile-pic {
+    margin-top: -4rem;
+  }
+  .profile-pic img {
+    width: 80vw;
+  }
+  .project-obj h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .full-pic img {
+    padding: 0 4rem;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .column-3 {
+    width: 100%;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .contact {
+    padding: 12rem 3rem;
+  }
+  .contact-info {
+    width: 65%;
+  }
+  .contact h1 {
+    font-size: 8rem;
+  }
+  .contact p {
+    margin: 8rem 0;
+  }
+}
+
+@media (min-width:801px) and (max-width:960px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  html {
+    font-size: 12px;
+  }
+  nav p {
+    font-size: 1.5rem;
+  }
+  header h1 {
+    font-size: 11rem;
+    line-height: 11rem;
+  }
+  .profile-pic {
+    margin-top: -6rem;
+  }
+  .project-obj h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+  .full-pic img {
+    padding: 0 4rem;
+  }
+  .column-2 {
+    width: 100%;
+  }
+  .no-mobile {
+    display: none;
+  }
+  .no-desktop {
+    display: block;
+  }
+  .contact h1 {
+    font-size: 10rem;
+  }
+  .contact-info {
+    width: 60%;
+  }
+}
+
+@media (min-width:961px) and (max-width:1120px) {
+  html {
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 13rem;
+    line-height: 13rem;
+  }
+  .project-obj h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:1121px) and (max-width:1280px) {
+  /* Desktop - Laptops* --- bre */
+  html {
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 15rem;
+    line-height: 15rem;
+  }
+  .project-obj h1 {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width:1281px) and (max-width:1530px) {
+  /* Desktop - Laptops*/
+  html {
+    font-size: 12px;
+  }
+  header h1 {
+    font-size: 18rem;
+    line-height: 18rem;
+  }
+}
+
+@media (min-width:1531px) and (max-width:1790px) {
+  /* Desktop - Laptops*/
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1791px) {
+  /* Hi-res monitors and desktops */
+  html {
+    font: 16px;
+  }
 }
